@@ -1,13 +1,49 @@
-import { favouriteBooks } from './FavouriteBooks';
-import { BookList } from './BookList';
+// ============================== Task ALert========================
+import { Alert } from './Alert';
 export const App = () => {
   return (
     <>
-      <h1>Books of the week</h1>
-      <BookList books={favouriteBooks} />
+      <Alert variant="info">
+        Would you like to browse our recommended products?
+      </Alert>
+      <Alert variant="error" outlined>
+        There was an error during your last transaction
+      </Alert>
+      <Alert variant="success" elevated>
+        Payment received, thank you for your purchase
+      </Alert>
+      <Alert variant="warning" outlined elevated>
+        Please update your profile contact information
+      </Alert>
     </>
   );
 };
+
+// ==================Task Card==================
+// const Card = ({ children }) => {
+//   return <div>{children}</div>;
+// };
+// export const App = () => {
+//   return (
+//     <Card>
+//       <h1>Card title</h1>
+//       <p>Text between opening and closing tag</p>
+//     </Card>
+//   );
+// };
+// ===============================Task Books===============
+// import { favouriteBooks } from './FavouriteBooks';
+// import { BookList } from './BookList';
+// export const App = () => {
+//   return (
+//     <>
+//       <h1>Books of the week</h1>
+//       <BookList books={favouriteBooks} />
+//     </>
+//   );
+// };
+
+// ===============================Task Product====================
 // import Product from './Product';
 
 // export default function App() {
@@ -29,6 +65,7 @@ export const App = () => {
 //   );
 // }
 
+//========================================================================================
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
