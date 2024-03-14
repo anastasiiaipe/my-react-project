@@ -1,5 +1,19 @@
 // ============================== Task ALert========================
 import { Alert } from './Alert';
+import { VscAccount } from 'react-icons/vsc';
+
+export const UserMenu = ({ name }) => {
+  return (
+    <div>
+      <p>
+        <VscAccount className="my-icon" size="24" /> {name}
+      </p>
+    </div>
+  );
+};
+
+UserMenu('Alex');
+
 export const App = () => {
   return (
     <>
